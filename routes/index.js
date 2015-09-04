@@ -3,7 +3,9 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  var clientSecret = process.env.APPSETTING_Square_AppSecret || "App secret not defined"
+  
+  res.render('index', { title: clientSecret });
 });
 
 module.exports = router;
