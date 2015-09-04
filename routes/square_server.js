@@ -2,17 +2,22 @@ var express = require('express');
 var request = require('request');
 var router = express.Router();
 
+var clientId = process.env.APPSETTING_Square_ClientId;
+var appSecret = process.env.APPSETTING_Square_AppSecret;
+
+if (!clientId || !appSecret) {
+  throw "Your Square client id or app secret are not defined. These values must be defined as the environment variables APPSETTING_Square_ClientId & APPSETTING_Square_AppSecret";
+}
+
 // define the home page route
 router.get('/', function(req, res) {
-  res.render('square', { authLink: 'https://connect.squareup.com/oauth2/authorize?client_id=SVyXv5a4MuWGOlaYpgWuzA' });
+  res.render('square', { authLink: 'https://connect.squareup.com/oauth2/authorize?client_id=' + clientId });
 });
 
 router.get('/redirect', function(req, res) {
   var code = req.query.code;
   console.log("Code is " + code);
 
-  var clientId = "SVyXv5a4MuWGOlaYpgWuzA";
-  var appSecret = "W8I8Mf7YPPvePDiAseGJTZgqghP_-U9TIt2W9VlraJ8";
   var requestObject = {
       'client_id': clientId,
       'client_secret': appSecret,
