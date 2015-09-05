@@ -12,6 +12,14 @@ router.get('/', function(req, res, next) {
       name:'Square',
       url:'./Connectors/Square'
     },
+    {
+      name:'Stock Quotes',
+      url:'http://sdesmond46.github.io/WDC_Test/WebDataConnector/WebDataConnector_sdk/StockQuoteConnector_advanced.html'
+    },
+    {
+      name:'Mad Money Scraper',
+      url:'http://sdesmond46.github.io/WDC_Test/WebDataConnector/WebDataConnector_sdk/Examples/MadMoneyScraper.html'
+    }
   ];
   
   res.render('index', { title: "WebDataConnector.com", connectorList: connectors });

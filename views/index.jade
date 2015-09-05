@@ -1,9 +1,7 @@
 extends layout
 
 block content
-  h1 Welcome to #{title}
-  br
-  h3 Available Connectors
+  h1 Connector Links
     div
       each connector in connectorList
         a(href=connector.url) #{connector.name}
