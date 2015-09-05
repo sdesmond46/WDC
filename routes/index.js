@@ -6,11 +6,11 @@ router.get('/', function(req, res, next) {
   var connectors = [
     {
       name:'Facebook',
-      url:'./Connectors/Facebook'
+      url:'./Connectors/Facebook/'
     },
     {
       name:'Square',
-      url:'./Connectors/Square'
+      url:'./Connectors/Square/'
     },
     {
       name:'Stock Quotes',
