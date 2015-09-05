@@ -1,0 +1,14 @@
+extends connector_base
+
+block head_extension
+  title Facebook Connector
+  script(src='/javascripts/facebook_connector_shared.js', type='text/javascript')
+  script(src='/javascripts/facebook_connector.js', type='text/javascript')
+  
+block content
+  .container(style='text-align:center;')
+    h1 Personal Pages Facebook Connector
+    p
+      | This connector will pull in information about the posts appearing on your Facebook wall. Each row represents a post or a like. If a row has a like_count of 0, that means no one liked the post and the username and id will be blank.
+    form#inputForm(action='')
+      input(type='submit', value='Get My Facebook Data!')

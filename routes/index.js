@@ -3,9 +3,18 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  var clientSecret = process.env.APPSETTING_Square_AppSecret || "App secret not defined"
+  var connectors = [
+    {
+      name:'Facebook',
+      url:'./Connectors/Facebook'
+    },
+    {
+      name:'Square',
+      url:'./Connectors/Square'
+    },
+  ];
   
-  res.render('index', { title: clientSecret });
+  res.render('index', { title: "WebDataConnector.com", connectorList: connectors });
 });
 
 module.exports = router;

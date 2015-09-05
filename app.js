@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 
 var square_connector = require('./routes/square_server');
+var facebook_connector = require('./routes/facebook_server');
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/Connectors/Square/', square_connector);
+app.use('/Connectors/Facebook/', facebook_connector);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
