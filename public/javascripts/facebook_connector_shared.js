@@ -4,7 +4,7 @@ CLIENT_ID = "475960835902299";
 if (CLIENT_ID.length == 0) {
 	alert("You have not supplied an app id. The connector will not work")
 }
-var REQUESTED_SCOPE = "user_status,user_likes,user_posts";
+var REQUESTED_SCOPE = "user_posts";
 var REDIRECT_PAGE = "/redirect";
 var ACCESS_TOKEN_COOKIE_NAME = "fb_access_token";
 
