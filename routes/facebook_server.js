@@ -8,6 +8,10 @@ router.get('/', function(req, res) {
 
 router.get('/redirect', function(req, res) {
   res.render('facebook_redirect', { });
+});
+
+router.get('/privacy', function(req, res) {
+  res.render('privacy_policy', { });
 })
 
 module.exports = router;
