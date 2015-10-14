@@ -97,6 +97,7 @@ function getData(userId, lastId, columns, outDataArray, doneCallback) {
               data = (new Date(data)).toISOString();
             } else if (col[1] == "string" && data) {
               data = data.replace(/(?:\r\n|\r|\n)/g, "\\n");
+              data = data.replace(/,/g , "");
             }
             
             rowData[col[0]] = data;
