@@ -1,6 +1,9 @@
 $(document).ready(function() {
 	$("#getDataButton").click(function() {
 		var searchText = $("#searchInput").val();
+		if (searchText.indexOf("@") == 0) {
+			searchText = searchText.substring(1);
+		}
 		console.log("Search text is " + searchText);
 		if (searchText.length > 0) {
 			tableau.connectionData = searchText;

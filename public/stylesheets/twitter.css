@@ -1,8 +1,9 @@
 #searchInput {
-  width:300pt;
-  margin-right: 10pt;
+  width: 60%;
+  left: 20%;
+  top: 38%;
+  position: absolute;
 }
-
 body {
   text-align: center;
 }
@@ -10,4 +11,20 @@ body {
 .searchHeight {
   height: 35pt;
   font-size: large;
+}
+
+#mainDiv {
+  background-image: url("../../img/TwitterLogo.png");
+  background-size: contain;
+  width: 747px;
+  height: 607px;
+  margin-top: 20px;
+  position: relative;
+}
+
+#getDataButton {
+    top: 47%;
+    width: 30%;
+    position: absolute;
+    left: 35%;
 }

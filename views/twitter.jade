@@ -7,8 +7,9 @@ block head_extension
   
 block content
   .container
-    h1 Twitter WDC
-    p For more information on the Twitter Search Api, look here:
-    br
-    input#searchInput(type="text", name="search", class="searchHeight") 
-    button#getDataButton(class="searchHeight") Search Twitter!
+    div#mainDiv
+      // h1 Twitter WDC
+      // p For more information on the Twitter Search Api, look here:
+      // br
+      input#searchInput(type="text", name="search", class="searchHeight", placeholder="Twitter Handle") 
+      button#getDataButton(class="searchHeight") Get Tweets
