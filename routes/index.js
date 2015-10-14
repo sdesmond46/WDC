@@ -22,7 +22,7 @@ router.get('/', function(req, res, next) {
     },
     {
       name:'Twitter Search',
-      url:'./Connectors/Twitter'
+      url:'./Connectors/Twitter/'
     }
   ];
   

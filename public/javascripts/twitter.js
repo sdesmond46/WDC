@@ -21,7 +21,7 @@ myConnector.init = function() {
 }
 
 myConnector.getColumnHeaders = function() {
-	$.getJSON("./Twitter/headers", function(data) {
+	$.getJSON("./headers", function(data) {
 		var fieldNames = [];
 		var fieldTypes = [];
 		
@@ -36,7 +36,7 @@ myConnector.getColumnHeaders = function() {
 
 myConnector.getTableData = function(lastRecordToken) {
 	var queryString = tableau.connectionData;
-	var url = './Twitter/tableData?q=' + encodeURI(queryString);
+	var url = './tableData?q=' + encodeURI(queryString);
 	
 	console.log("Query string is '" + queryString + "'");
 	console.log("url is '" + url + "'");

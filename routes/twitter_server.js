@@ -95,6 +95,8 @@ function getData(userId, lastId, columns, outDataArray, doneCallback) {
             var data = status[col[0]];
             if (col[1] == "datetime" || col[1] == "date") {
               data = (new Date(data)).toISOString();
+            } else {
+              data = data.replace(/(?:\r\n|\r|\n)/g, "\\n");
             }
             
             rowData[col[0]] = data;
