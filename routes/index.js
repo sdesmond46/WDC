@@ -19,6 +19,10 @@ router.get('/', function(req, res, next) {
     {
       name:'Mad Money Scraper',
       url:'http://sdesmond46.github.io/WDC_Test/WebDataConnector/WebDataConnector_sdk/Examples/MadMoneyScraper.html'
+    },
+    {
+      name:'Twitter Search',
+      url:'./Connectors/Twitter'
     }
   ];
   

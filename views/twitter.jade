@@ -1,0 +1,14 @@
+extends connector_base
+
+block head_extension
+  title Twitter Connector
+  script(src='/javascripts/twitter.js', type='text/javascript')
+  link(rel='stylesheet', href='/stylesheets/twitter.css')
+  
+block content
+  .container
+    h1 Twitter WDC
+    p For more information on the Twitter Search Api, look here:
+    br
+    input#searchInput(type="text", name="search", class="searchHeight") 
+    button#getDataButton(class="searchHeight") Search Twitter!

@@ -1,0 +1,13 @@
+#searchInput {
+  width:300pt;
+  margin-right: 10pt;
+}
+
+body {
+  text-align: center;
+}
+
+.searchHeight {
+  height: 35pt;
+  font-size: large;
+}
