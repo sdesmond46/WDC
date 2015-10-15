@@ -7,7 +7,7 @@ $(document).ready(function() {
 		console.log("Search text is " + searchText);
 		if (searchText.length > 0) {
 			tableau.connectionData = searchText;
-			tableau.connectionName = "Twitter Search: " + searchText;
+			tableau.connectionName = "@" + searchText + "'s Tweets";
 			tableau.submit();
 		}
 	})
