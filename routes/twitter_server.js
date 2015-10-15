@@ -36,7 +36,7 @@ router.get('/accessToken', function(req, res) {
 function getHeaders() {
   var columns = [
     ["text", "string"],
-    ["retweeted", "bool"],
+    // ["retweeted", "bool"],
     ["created_at", "datetime"],
     ["favorite_count", "int"],
     ["id_str", "string"],
