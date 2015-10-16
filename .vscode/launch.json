@@ -25,7 +25,11 @@
 			// Use JavaScript source maps (if they exist).
 			"sourceMaps": false,
 			// If JavaScript source maps are enabled, the generated code is expected in this directory.
-			"outDir": null
+			"outDir": null,
+			"env" : {
+				"APPSETTING_Twitter_ClientId" : "vsQQVwFshanjbHbtDWlyk7rEP",
+				"APPSETTING_Twitter_AppSecret" : "FANDEUW9Ju5pyTxmYCjw0MWtNOwZfjhLUQFvd3llfnkiWbvqCe"
+			}
 		},
 		{
 			"name": "Attach",

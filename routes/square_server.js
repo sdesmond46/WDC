@@ -6,7 +6,7 @@ var clientId = process.env.APPSETTING_Square_ClientId;
 var appSecret = process.env.APPSETTING_Square_AppSecret;
 
 if (!clientId || !appSecret) {
-   throw "Your Square client id or app secret are not defined. These values must be defined as the environment variables APPSETTING_Square_ClientId & APPSETTING_Square_AppSecret";
+  // throw "Your Square client id or app secret are not defined. These values must be defined as the environment variables APPSETTING_Square_ClientId & APPSETTING_Square_AppSecret";
 }
 
 // define the home page route
