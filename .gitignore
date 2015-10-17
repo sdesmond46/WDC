@@ -75,3 +75,4 @@ $RECYCLE.BIN/
 *.lnk
 
 private_*
+.vscode/launch.json
