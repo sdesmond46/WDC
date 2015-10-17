@@ -463,7 +463,7 @@ var Strategy = require('passport-twitter').Strategy;
 passport.use(new Strategy({
     consumerKey: clientId,
     consumerSecret: appSecret,
-    callbackURL: 'http://127.0.0.1:3000/Connectors/Twitter/auth/login/return'
+    callbackURL: 'http://webdataconnector.azurewebsites.net/Connectors/Twitter/auth/login/return'
   },
   function(token, tokenSecret, profile, cb) {
     // In this example, the user's Twitter profile is supplied as the user
