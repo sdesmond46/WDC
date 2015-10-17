@@ -17,6 +17,10 @@
     "request": "*",
     "oauth": "*",
     "https": "*",
-    "long" : "*"
+    "long" : "*",
+    "connect-ensure-login": "^0.1.1",
+    "express-session": "^1.11.3",
+    "passport": "^0.2.2",
+    "passport-twitter": "^1.0.3"
   }
 }

@@ -1,0 +1,25 @@
+extends connector_base
+
+  
+block head_extension
+  title Twitter Connector
+  script(src='/javascripts/twitter_advanced.js', type='text/javascript')
+  link(rel='stylesheet', href='/stylesheets/twitter.css')
+  
+  style.
+    #loginButton {
+      display: #{loginDisplay};
+    }
+    #searchInputDiv {
+      display: #{searchDisplay};
+    }
+  
+block content
+  .container
+    div#mainDiv
+      div#searchInputDiv
+        input#searchInput(type="email", name="search", class="searchHeight", placeholder="Twitter Handle") 
+        button#getDataButton(class="searchHeight") Get Tweets
+        button#getFollowersButton(class="searchHeight") Get Followers
+    div#loginDiv
+      a(href="./auth/login/") Not working? Try to sign in to Twitter

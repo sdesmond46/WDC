@@ -20,11 +20,35 @@ body {
   height: 607px;
   margin-top: 20px;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#loginDiv {
+  width: 747px;
+  height: 60px;
+  margin-top: 0px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 
 #getDataButton {
     top: 47%;
-    width: 30%;
+    width: 29%;
     position: absolute;
-    left: 35%;
+    left: 20%;
+}
+
+#getFollowersButton {
+    top: 47%;
+    width: 29%;
+    position: absolute;
+    left: 51%;
+}
+
+input {
+    -webkit-appearance: none;
+    padding-left: 10px;
 }

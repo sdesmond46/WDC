@@ -9,7 +9,7 @@ var routes = require('./routes/index');
 
 var square_connector = require('./routes/square_server');
 var facebook_connector = require('./routes/facebook_server');
-var twitter_connector = require('./routes/twitter_server');
+var twitter_connector = require('./routes/twitter_advanced_server');
 
 var app = express();
 
