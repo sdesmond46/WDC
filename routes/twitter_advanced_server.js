@@ -50,7 +50,7 @@ function getHeaders() {
     ["lang", "string"],
     ["retweet_count", "int"],
     ["source", "string"],
-    ["is_retweet", "bool"]
+    ["is_retweet", "string"]
   ];
   
   return columns;
@@ -122,7 +122,7 @@ function getData(oauthToken, userId, lastId, columns, outDataArray, doneCallback
             var data = "";
             if (col[0] == "is_retweet") {
               // Check whether or not this was a retweet
-              data = status.hasOwnProperty("retweeted_status");
+              data = status.hasOwnProperty("retweeted_status") ? "true" : "false";
             } else {
               data = status[col[0]];
               if (col[1] == "datetime" || col[1] == "date") {
